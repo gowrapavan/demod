@@ -24,9 +24,9 @@ params:
               <link rel="shortcut icon" href="favicon.ico">
 
   profile:
-    name: "First Last, Abbr."
+    name: "Gowra Pavan Kumar"
     tagline: Title
-    location: "City Name, ST"
+    location: "Guntur, Andhra Pradesh"
     photo: profile.jpg
   social:
     title: Links
@@ -64,7 +64,10 @@ params:
   aboutme:
     title: About Me
     icon: fas fa-user
-    description: This is a demo of the `aafu` theme. It has `light` and `dark` theme.
+    description: |
+     Hey there, I'm Gowra Pavan Kumar, a fourth-year IT student at Kallam Haranadhareddy Institute of Technology in Guntur, Andhra Pradesh. I'm passionate about tech and love diving into programming languages like C and Python. I'm also into web development, playing around with HTML, CSS, and JavaScript to build cool stuff online.
+     
+     Through my blog, I want to share what I've learned and help others explore the exciting world of technology. From coding tips to discussions on the latest tech trends, my goal is to make tech easier to understand and more accessible for everyone.
   experience:
     title: Experiences
     icon: fas fa-briefcase
@@ -158,7 +161,7 @@ params:
       - skill: "Skill 1, Skill 2"
         skillrating: 90
       - skill: Skill 3
-        skillrating: 80
+        skillrating: 100
       - skill: Skill 4
         skillrating: 50
   hobby:
