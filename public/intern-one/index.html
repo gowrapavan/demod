@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-us" class="m-auto dark"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>aafu theme</title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="Website title" />
+<meta name="author" content="Darshan Baral" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.125.4" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+
+
+
+<link href="/main.css" rel="stylesheet" />
+
+
+  
+
+  <script>
+    let html = document.querySelector("html");
+    let theme = window.localStorage.getItem("theme");
+    if (theme) {
+      theme === "dark"
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    } else if (html.classList.contains("dark")) {
+      window.localStorage.setItem("theme", "dark");
+    } else {
+      html.classList.remove("dark");
+      window.localStorage.setItem("theme", "light");
+    }
+
+    window.onload = () => {
+      let themeToggle = document.querySelector(".theme-toggle");
+      if (window.localStorage.getItem("theme") === "dark") {
+        themeToggle.classList.remove("bi-moon-fill");
+        themeToggle.classList.add("bi-brightness-high");
+      } else {
+        themeToggle.classList.add("bi-moon-fill");
+        themeToggle.classList.remove("bi-brightness-high");
+      }
+
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+
+    window.onresize = () => {
+      let defaultActivePanel = document.querySelector(".accordion.active");
+      if (defaultActivePanel) {
+        defaultActivePanel.nextElementSibling.style.maxHeight =
+          defaultActivePanel.nextElementSibling.scrollHeight + "px";
+      }
+    };
+  </script>
+</head>
+<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
+    
+    <header
+  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
+>
+  <div>
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="http://localhost:1313/">Home</a>    
+    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
+  </div>
+  
+  <i
+    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
+    onclick="lightDark(this)"
+  ></i>
+</header>
+
+<script>
+  const lightDark = (el) => {
+    let html = document.querySelector("html");
+    if (html.classList.contains("dark")) {
+      html.classList.remove("dark");
+      el.classList.add("fa-moon");
+      el.classList.remove("fa-sun");
+      window.localStorage.setItem("theme", "light");
+    } else {
+      html.classList.add("dark");
+      el.classList.add("fa-sun");
+      el.classList.remove("fa-moon");
+      window.localStorage.setItem("theme", "dark");
+    }
+  };
+</script>
+
+    
+    <main class="grow">
+<div class="prose prose-stone dark:prose-invert max-w-none">
+<div class="mb-3">
+  <h1 class="top-h1" style="font-size: 2.75em">Salesforce Developer Virtual Internship</h1>
+  <p class="mb-1">October 1, 2023</p>
+  <p>&mdash;</p>
+</div>
+<div class="content">
+  <h2 id="chapter-1-executive-summary">CHAPTER 1: EXECUTIVE SUMMARY</h2>
+<h3 id="learning-objectives">Learning Objectives:</h3>
+<ol>
+<li>Understand the Salesforce Platform Architecture.</li>
+<li>Develop Salesforce Objects and Fields Using Apex Code.</li>
+<li>Design and Implement Visualforce Pages for Custom User Interfaces.</li>
+<li>Integrate Salesforce Applications with External Systems.</li>
+<li>Deploy and Secure Salesforce Applications.</li>
+</ol>
+<h3 id="learning-outcomes">Learning Outcomes:</h3>
+<ol>
+<li>Understand the key components of the Salesforce platform.</li>
+<li>Write Apex code to create and manage Salesforce objects.</li>
+<li>Build custom user interfaces using Visualforce.</li>
+<li>Consume external data using the Salesforce APIs.</li>
+<li>Deploy Salesforce applications to Heroku.</li>
+<li>Implement Salesforce security best practices.</li>
+<li>Develop a functional Salesforce application.</li>
+</ol>
+<p>This report is about my 8 weeks virtual internship program with Smart Internz. In this comprehensive report, I have discussed about every major aspect of the company which I observed and perceived during my virtual internship program.
+During my virtual internship program, I have learned and mainly worked on Apex Specialist, Process Automation Specialist and Developer Superset. All the details have been discussed in detail. All the policies and procedures of the company have been discussed in detail.
+Salesforce developers play a critical role in driving innovation and improving business operations through Salesforce applications. With the growing demand for Salesforce expertise, aspiring developers can embark on a rewarding career path that offers ample opportunities for growth and advancement. By acquiring the necessary skills and knowledge, Salesforce developers can contribute significantly to the success of organizations across diverse industries.</p>
+<h2 id="chapter-2-overview-of-the-organization">CHAPTER 2: OVERVIEW OF THE ORGANIZATION</h2>
+<h3 id="a-introduction-of-the-organization">A. Introduction of the Organization</h3>
+<h4 id="what-is-salesforce">What Is Salesforce?</h4>
+<p>Salesforce is your customer success platform, designed to help you sell, service, market, analyse, and connect with your customers.
+Salesforce has everything you need to run your business from anywhere. Using standard products and features, you can manage relationships with prospects and customers, collaborate and engage with employees and partners, and store your data securely in the cloud.
+Salesforce is the world‘s #1 CRM (Customer Relationship Management) where it unites Marketing, Sales, Commerce, IT etc teams to their customers to deliver a better service. We are determined to teach this emerging Technology in a very realistic and fun way. We have organized the challenges in such a way that the learner will be able to learn Salesforce in a very enthusiastic and fun way with a limited time participation. This program consists of live sessions, Hands-on practical activities, mentoring support and working on super badges on Trailhead platform. In order to help all beginners understand the Salesforce ecosystem and its products, we have curated a few best modules on the Trailhead platform that will help you to get ready for the Bootcamp.</p>
+<h4 id="b-vision-mission-and-values-of-the-organization">B. Vision, Mission and Values of the Organization</h4>
+<h4 id="vision">Vision:</h4>
+<p>To provide the world&rsquo;s most innovative and trusted customer relationship management (CRM) platform that enables companies to connect with their customers in a whole new way.</p>
+<h4 id="mission">Mission:</h4>
+<p>Salesforce&rsquo;s mission is to help companies of every size and industry connect with their customers in new ways using cloud, mobile, social, and artificial intelligence technologies. Salesforce aims to make technology more accessible, user-friendly, and affordable for businesses, non-profits, and governments worldwide.</p>
+<h4 id="values">Values:</h4>
+<p>Salesforce is driven by its core values that are deeply ingrained in its culture and guide its decisions, actions, and interactions with customers, partners, employees, and communities. These values include:</p>
+<ul>
+<li>Trust</li>
+<li>Customer Success</li>
+<li>Innovation</li>
+<li>Equality</li>
+<li>Giving Back</li>
+</ul>
+<h3 id="c-policy-of-the-organization-in-relation-with-the-intern-role">C. Policy of the Organization, in relation with the intern role</h3>
+<p>Salesforce, as a global technology company, has a strong commitment to fostering a diverse and inclusive workplace. Their policy in relation to intern roles is to provide an environment where interns can develop their skills and gain valuable experience while contributing to the company&rsquo;s mission.
+Salesforce believes that interns should be treated with respect, provided with equal opportunities and fair compensation, and given access to resources and tools that will enable them to succeed in their roles. They also encourage interns to be proactive and take ownership of their work, and provide opportunities for mentorship and professional development.
+In terms of specific policies related to internships, Salesforce has a code of conduct that all employees, including interns, are expected to follow. This code includes guidelines for ethical behaviour, professionalism, and respect for others.
+Salesforce also has a policy of non-discrimination, and interns are expected to adhere to this policy as well. This means that interns will not be discriminated against based on factors such as race, ethnicity, gender, sexual orientation, religion, or age.
+Overall, Salesforce&rsquo;s policy regarding intern roles is centred around providing a supportive and inclusive environment where interns can learn and grow, while also contributing to the company&rsquo;s success.</p>
+<h3 id="d-organizational-structure">D. Organizational Structure</h3>
+<p>Salesforce is a large organization with a complex organizational structure. At the top of the hierarchy is the Chief Executive Officer (CEO), who is responsible for setting the overall strategy and direction of the company. Under the CEO are several executive vice presidents who are responsible for different business units, such as Sales, Marketing, and Operations.
+Salesforce&rsquo;s organizational structure is divided into three main groups: Customer Success, Technology, and Products.
+Customer Success: This group is responsible for ensuring that customers are successful in their use of Salesforce products. It includes teams focused on customer service, customer success management, and training.
+Technology: This group is responsible for the development and maintenance of the Salesforce platform, as well as the infrastructure and systems that support it. It includes teams focused on engineering, data science, and security.
+Products: This group is responsible for the development and delivery of Salesforce&rsquo;s product offerings. It includes teams focused on product management, product marketing, and product development.</p>
+<h2 id="chapter-3-introduction-to-salesforce-components">CHAPTER 3: INTRODUCTION TO SALESFORCE COMPONENTS</h2>
+<h3 id="a-create-a-trailhead-playground">A. Create a Trailhead Playground</h3>
+<h4 id="what-is-a-trailhead-playground">What Is a Trailhead Playground?</h4>
+<p>A Trailhead Playground is an org we can use to complete hands-on challenges and try out new features and customizations. Much like a real playground, a Trailhead Playground lets us play around and make customizations without impacting anything else.
+We can do almost anything to our Trailhead Playground, and it comes with a set of Trailhead-specific data that we can use when completing challenges. Trailhead Playgrounds have some limits, but for the most part they give us the same customization options as a production org. And although we can outgrow a real-life playground, our Trailhead Playground never expires, as long as we keep using it.
+Follow Along with Trail Together
+A Trailhead Playground is a DE org, but specifically for Trailhead. Trailhead Playgrounds come with Trailhead-specific data, and a pre-installed package that we use to test your hands-on challenges. Trailhead Playgrounds also include tools to make some of the tasks you’ll find yourself completing often easier, such as finding your username and resetting your password, and installing managed packages.</p>
+<h4 id="creating-our-first-trailhead-playground">Creating our First Trailhead Playground</h4>
+<p>Once we&rsquo;ve created a Trailhead account with our Salesforce account or a linked social account. A Trailhead Playground is created automatically and linked to our Trailhead account.
+In every hands-on challenge and project step verification, we&rsquo;ll see the name of a hands-on org and a Launch button. Trailhead automatically chooses our most recently used org or, if we&rsquo;ve tried the challenge before, the org we last used for that particular challenge. If we&rsquo;ve never used a hands-on org before, Trailhead defaults to our most recently created playground.</p>
+<h1 id="adding-a-list-view-component">Adding a List View Component</h1>
+<p>Now that you have a page, you can add components. For your first component, drag a List View component onto the page.</p>
+<ol>
+<li>In the Desktop drop-down list, click Tablet - Portrait. The canvas&rsquo;s preview layout changes from the standard single column to two columns.</li>
+<li>From the Standard Components menu on the left, drag the List View to the left column.</li>
+<li>Set the properties of this component using the Properties list in the right sidebar.
+<ul>
+<li>In the Object drop-down list, select Account.</li>
+<li>In the Filter drop-down list, select My Accounts.</li>
+<li>In the Number of Records to Display field, enter 7.</li>
+</ul>
+</li>
+</ol>
+<p><img src="link-to-image" alt="Number of Records in New Lightning App"></p>
+<p>Click Save and then click Not Yet in the popup window. We will activate this page in a later step.</p>
+<h1 id="basics-of-apex">Basics of Apex</h1>
+<p>Apex is a programming language that uses Java-like syntax and acts like database stored procedures. Apex enables developers to add business logic to system events, such as button clicks, updates of related records, and Visualforce pages.</p>
+<p>As a language, Apex is:</p>
+<ul>
+<li><strong>Hosted:</strong>* Apex is saved, compiled, and executed on the server—the Lightning Platform.</li>
+<li><strong>Object oriented:</strong> Apex supports classes, interfaces, and inheritance.</li>
+<li><strong>Strongly typed:</strong> Apex validates references to objects at compile time.</li>
+<li><strong>Multitenant aware:</strong> Because Apex runs in a multitenant platform, it guards closely against runaway code by enforcing limits, which prevent code from monopolizing shared resources.</li>
+<li><strong>Integrated with the database:</strong> It is straightforward to access and manipulate records. Apex provides direct access to records and their fields, and provides statements and query languages to manipulate those records.</li>
+<li><strong>Data focused:</strong> Apex provides transactional access to the database, allowing you to roll back operations.</li>
+<li><strong>Easy to use:</strong> Apex is based on familiar Java idioms.</li>
+<li><strong>Easy to test:</strong> Apex provides built-in support for unit test creation, execution, and code coverage. Salesforce ensures that all custom Apex code works as expected by executing all unit tests prior to any platform upgrades.</li>
+<li><strong>Versioned:</strong> Custom Apex code can be saved against different versions of the API.</li>
+</ul>
+<p><img src="link-to-image" alt="Apex Usage"></p>
+<h2 id="apex-language-highlights">Apex Language Highlights</h2>
+<p>Like other object-oriented programming languages, these are some of the language constructs that Apex supports:</p>
+<ul>
+<li>Classes, interfaces, properties, and collections (including arrays).</li>
+<li>Object and array notation.</li>
+<li>Expressions, variables, and constants.</li>
+<li>Conditional statements (if-then-else) and control flow statements (for loops and while loops).</li>
+</ul>
+<p>Unlike other object-oriented programming languages, Apex supports:</p>
+<ul>
+<li>Cloud development as Apex is stored, compiled, and executed in the cloud.</li>
+<li>Triggers, which are similar to triggers in database systems.</li>
+<li>Database statements that allow you to make direct database calls and query languages to query and search data.</li>
+<li>Transactions and rollbacks.</li>
+<li>The global access modifier, which is more permissive than the public modifier and allows access across namespaces and applications.</li>
+<li>Versioning of custom code.</li>
+</ul>
+<h1 id="apex-triggers">Apex Triggers</h1>
+<p>Apex triggers enable you to perform custom actions before or after events to records in Salesforce, such as insertions, updates, or deletions. Just like database systems support triggers, Apex provides trigger support for managing records.</p>
+<p>Typically, you use triggers to perform operations based on specific conditions, to modify related records or restrict certain operations from happening. You can use triggers to do anything you can do in Apex, including executing SOQL and DML or calling custom Apex methods.</p>
+<p>Use triggers to perform tasks that can’t be done by using the point-and-click tools in the Salesforce user interface. For example, if validating a field value or updating a field on a record, use validation rules and flows. Use Apex triggers if performance and scale is important, if your logic is too complex for the point-and-click tools, or if you&rsquo;re executing CPU-intensive operations.</p>
+<p>Triggers can be defined for top-level standard objects, such as Account or Contact, custom objects, and some standard child objects. Triggers are active by default when created. Salesforce automatically fires active triggers when the specified database events occur.</p>
+<h2 id="trigger-syntax">Trigger Syntax</h2>
+<p>The syntax of a trigger definition is different from a class definition’s syntax. A trigger definition starts with the trigger keyword. It is then followed by the name of the trigger, the Salesforce object that the trigger is associated with, and the conditions under which it fires. A trigger has the following syntax:</p>
+<p>To execute a trigger before or after insert, update, delete, and undelete operations, specify multiple trigger events in a comma-separated list. The events you can specify are:</p>
+<ul>
+<li>before insert</li>
+<li>before update</li>
+<li>before delete</li>
+<li>after insert</li>
+<li>after update</li>
+<li>after delete</li>
+<li>after undelete</li>
+</ul>
+<h2 id="trigger-example">Trigger Example</h2>
+<p>This simple trigger fires before you insert an account and writes a message to the debug log.</p>
+<ol>
+<li>In the Developer Console, click File | New | Apex Trigger.</li>
+<li>Enter Hello World Trigger for the trigger name, and then select Account for the subjects. Click Submit.</li>
+<li>Replace the default code with the following.</li>
+<li>To save, press Ctrl+S.</li>
+<li>To test the trigger, create an account.
+<ul>
+<li>Click Debug | Open Execute Anonymous Window.</li>
+<li>In the new window, add the following and then click Execute.</li>
+</ul>
+</li>
+<li>In the debug log, find the Hello World! statement. The log also shows that the trigger has been executed.</li>
+</ol>
+<h2 id="types-of-triggers">Types of Triggers</h2>
+<p>There are two types of triggers.</p>
+<ul>
+<li><strong>Before triggers</strong> are used to update or validate record values before they’re saved to the database.</li>
+<li><strong>After triggers</strong> are used to access field values that are set by the system (such as a record&rsquo;s Id or Last Modified Date field), and to affect changes in other records. The records that fire the after trigger are read-only.</li>
+</ul>
+<h1 id="apex-classes">Apex Classes</h1>
+<p>Apex classes are the building blocks of Salesforce development. They are used to implement business logic, such as creating and updating records, sending emails, and integrating with external systems. Apex classes are written in the Apex programming language, which is a strongly typed, object-oriented language that is similar to Java.</p>
+<h3 id="example-of-an-apex-class">Example of an Apex class:</h3>
+<pre tabindex="0"><code class="language-apex" data-lang="apex">public class AccountCreator {
+    public static Account create Account (String name) {
+        Account = new Account ();
+        account. Name = name;
+        insert account;
+        return account;
+    }
+}
+</code></pre><h1 id="lightning-web-components">Lightning Web Components</h1>
+<p>Lightning Web Components (LWC) is a modern programming model for creating Lightning components in Salesforce. It leverages web standards and can seamlessly coexist with the Aura programming model while offering superior performance. To start developing with LWC, set up Salesforce DX and use Visual Studio Code as your code editor.</p>
+<h2 id="install-the-command-line-interface-cli">Install the Command Line Interface (CLI)</h2>
+<p>Use the Salesforce CLI to manage the full lifecycle of your Salesforce applications. Install the CLI from <a href="https://developer.salesforce.com/tools/sfdxcli">Salesforce CLI</a>. Confirm the installation by running   <code> sf update</code> in the command line.</p>
+<h2 id="install-salesforce-extensions-for-visual-studio-code">Install Salesforce Extensions for Visual Studio Code</h2>
+<p>Visual Studio Code is the preferred code editor for Salesforce developers. Install the Salesforce Extension Pack from the Extensions panel in Visual Studio Code.</p>
+<h2 id="create-a-lightning-web-component">Create a Lightning Web Component</h2>
+<h3 id="create-a-salesforce-dx-project">Create a Salesforce DX Project</h3>
+<ol>
+<li>Open the Command Palette in Visual Studio Code.</li>
+<li>Type SFDX and select &ldquo;SFDX: Create Project&rdquo;.</li>
+<li>Accept the default options and name your project &ldquo;Hello World Lightning Web Component&rdquo;.</li>
+<li>Choose a folder to store the project and create it.</li>
+</ol>
+<h3 id="authorize-your-trailhead-playground">Authorize Your Trailhead Playground</h3>
+<ol>
+<li>Open the Command Palette.</li>
+<li>Type SFDX and select &ldquo;SFDX: Authorize an Org&rdquo;.</li>
+<li>Follow the prompts to log in using your Trailhead Playground credentials.</li>
+</ol>
+<h3 id="create-a-lightning-web-component-1">Create a Lightning Web Component</h3>
+<ol>
+<li>
+<p>Open the Command Palette.</p>
+</li>
+<li>
+<p>Type SFDX and select &ldquo;SFDX: Create Lightning Web Component&rdquo;.</p>
+</li>
+<li>
+<p>Enter &ldquo;helloWorld&rdquo; as the component name.</p>
+</li>
+<li>
+<p>Accept the default file path.</p>
+</li>
+<li>
+<p>View the newly created files in Visual Studio Code.</p>
+</li>
+<li>
+<p>Copy the following code into <code>helloWorld.html</code>:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">template</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;<span style="color:#f92672">lightning-card</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HelloWorld&#34;</span> <span style="color:#a6e22e">icon-name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;custom:custom14&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>     &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;slds-m-around_medium&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>       &lt;<span style="color:#f92672">p</span>&gt;Hello, {greeting}!&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>       &lt;<span style="color:#f92672">lightning-input</span> <span style="color:#a6e22e">label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span> <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">{greeting}</span> <span style="color:#a6e22e">onchange</span><span style="color:#f92672">=</span><span style="color:#e6db74">{changeHandler}</span>&gt;&lt;/<span style="color:#f92672">lightning-input</span>&gt;
+</span></span><span style="display:flex;"><span>     &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>   &lt;/<span style="color:#f92672">lightning-card</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">template</span>&gt;
+</span></span></code></pre></div><ol start="7">
+<li>Copy the following code into <code>helloWorld.js</code>:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">LightningElement</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;lwc&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HelloWorld</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">LightningElement</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;World&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">changeHandler</span>(<span style="color:#a6e22e">event</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">this</span>.<span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">target</span>.<span style="color:#a6e22e">value</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="visualforce-developer-super-badge">Visualforce Developer super badge:</h3>
+<p>This super badge assesses your ability to develop and maintain Visualforce pages. Visualforce is a declarative language that can be used to create user interfaces for Salesforce applications.</p>
+<p><img src="/images/profile.jpg" alt="Example Image"></p>
+<pre><code>             Fig :4a Apex specialist                             Fig :4b Flow Elements and Resources Specialist
+
+
+
+                                                     
+
+       Fig :4c Screen Flow Specialist                               Fig :4d Process Automation Specialist
+
+
+
+
+
+
+                      
+
+                                                    Fig :4e Developer Super Set
+</code></pre>
+
+</div>
+</div>
+<div class="flex flex-row justify-around my-2">
+  <h3 class="mb-1 mt-1 text-left mr-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-left"></i>
+    
+  </h3>
+  <h3 class="mb-1 mt-1 text-left ml-4">
+    
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-right"></i>
+    
+  </h3>
+</div>
+
+
+    </main>
+    
+    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
+  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://www.cloudflare.com/">Cloudflare</a></p>
+  <p >
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        aafu
+      </a>
+    </i>
+    by
+    <a href="https://www.darshanbaral.com/">
+      darshan
+    </a>
+  </p>
+</footer>
+
+    
+  </body>
+</html>
