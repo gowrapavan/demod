@@ -1,7 +1,7 @@
 +++
 title = "Salesforce Developer Virtual Internship"
 date  = 2023-10-01
-author = "Darshan Baral"
+author = "gowra pavan"
 +++
 
 ## CHAPTER 1: EXECUTIVE SUMMARY

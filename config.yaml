@@ -1,10 +1,10 @@
-baseURL: https://aafu.pages.dev/
+baseURL: http://localhost:1313/
 languageCode: en-us
 build:
   writeStats: true
 params:
-  title: aafu theme
-  author: Darshan Baral
+  title: Gowra
+  author: gowra pavan
   description: Website title
   copyright: >-
     powered by [hugo](https://gohugo.io/) & deployed on
@@ -25,16 +25,16 @@ params:
 
   profile:
     name: "Gowra Pavan Kumar"
-    tagline: Title
+    tagline: Software Engineer Student
     location: "Guntur, Andhra Pradesh"
-    photo: profile.jpg
+    photo: mohi.jpg
   social:
     title: Links
     list:
       - icon: fab fa-linkedin-in
         url: "#"
         title: LinkedIn
-      - icon: fab fa-stack-overflow
+      - icon: fab fa-salesforce
         url: "#"
         title: StackOverflow
       - icon: fab fa-github
@@ -43,20 +43,21 @@ params:
       - icon: fab fa-twitter
         url: "#"
         title: Twitter
-      - icon: fab fa-orcid
+      - icon: fab fa-instagram
         url: "#"
-        title: Orcid
-      - icon: ai ai-google-scholar
+        title: insta
+      - icon: fab fa-eduskills
         url: "#"
         title: Google Scholar
-      - icon: fab fa-researchgate
+      - icon: fab fa-facebook
         url: "#"
-        title: ResearchGate
+        title: facebook
   showInAccordion:
     - item: aboutme
       expand: true
-    - item: experience
+    
     - item: education
+    - item: experience
     - item: publication
     - item: project
     - item: skill
@@ -73,8 +74,31 @@ params:
      I'm passionate about tech and love diving into programming languages like C and Python. I'm also into web development, playing around with HTML, CSS, and JavaScript to build cool stuff online.
 
      Through my blog, I want to share what I've learned and help others explore the exciting world of technology. From coding tips to discussions on the latest tech trends, my goal is to make tech easier to understand and more accessible for everyone.
+  
+  education:
+    title: Education
+    icon: fas fa-graduation-cap
+    list:
+      - degree: Central Board of Secondary Education
+        college: DR.KLP PUBLIC SCHOOL
+        dates:  2019
+        thesis_title: "I have completed Secondary School education under the Central Board of Secondary Education (CBSE) curriculum, achieving a commendable percentage in the year 2019."
+        thesis_url: "school"
+
+      - degree: Senior Secondary Education (12th Grade)
+        college: Narayana Junior College
+        dates: 2021
+        thesis_title: "I completed my Higher Secondary education (Intermediate) at Narayana Junior College, achieving a score of 74%."
+        thesis_url: "#"
+      - degree: Bachelor of Technology
+        college: Kallam Haranadhareddy Institute of Technology
+        dates: 2021 - 2025
+        thesis_title: "Currently pursuing a Bachelor of Technology (B.Tech) degree in Information Technology at Kallam Haranadhareddy Institute of Technology."
+        thesis_url: "#"
+
+
   experience:
-    title: Experiences
+    title: Internships
     icon: fas fa-briefcase
     list:
       - position: Job Title
@@ -89,26 +113,9 @@ params:
         dates: 2018 - 2019
         url: "#"
         company: Company Name
-  education:
-    title: Education
-    icon: fas fa-graduation-cap
-    list:
-      - degree: salesforce
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: M.S. in Subject
-        college: University of State-City
-        dates: 2013 - 2018
-        thesis_title: "Effect of humans on other humans: a study of human behavior."
-        thesis_url: "#"
-      - degree: B.S. in Subject
-        college: University of State-City
-        dates: 2004 - 2009
   publication:
-    title: Publications
-    icon: fas fa-book
+    title: Certificates
+    icon: fas fa-certificate
     format:
       - date
       - title
