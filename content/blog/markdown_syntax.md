@@ -1,7 +1,7 @@
 +++
-author = "Darshan Baral"
-title = "Demo Page"
-date = "2022-11-19"
+author = "Gowra Pavan"
+title = "Blog Making By Markdown "
+date = "2024-05-01"
 description = "Sample article showcasing formatting for HTML elements."
 tags = [
     "markdown",

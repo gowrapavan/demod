@@ -38,15 +38,15 @@ params:
         url: "#"
         title: StackOverflow
       - icon: fab fa-github
-        url: "#"
+        url: "https://github.com/gowrapavan"
         title: GitHub
       - icon: fab fa-twitter
         url: "#"
         title: Twitter
       - icon: fab fa-instagram
-        url: "#"
+        url: "https://www.instagram.com/gowra_pavan?igsh=Ymc0czQ0M3NpY3Fz"
         title: insta
-      - icon: fab fa-eduskills
+      - icon: fab fa-facebook
         url: "#"
         title: Google Scholar
       - icon: fab fa-facebook
@@ -89,7 +89,7 @@ params:
         college: Narayana Junior College
         dates: 2021
         thesis_title: "I completed my Higher Secondary education (Intermediate) at Narayana Junior College, achieving a score of 74%."
-        thesis_url: "#"
+        thesis_url: "inter"
       - degree: Bachelor of Technology
         college: Kallam Haranadhareddy Institute of Technology
         dates: 2021 - 2025
@@ -183,7 +183,6 @@ params:
       - hobby: Cooking
       - hobby: Hiking
       - hobby: Baking
-
   Future:
     title: Focus    
     icon: fas fa-project-diagram

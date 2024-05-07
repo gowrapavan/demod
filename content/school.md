@@ -5,9 +5,11 @@ date = 2019-05-01
 
 
 
-# About Dr. Kondabolu Lakshmi Prasad Public School, Guntur
 
-Dr. Kondabolu Lakshmi Prasad Public School, also known as Dr. Kondabolu Lakshmi Prasad Public School, was established in 1983. It is managed by the Nagarjuna Education Society. The school is affiliated with the Central Board of Secondary Education (CBSE).
+
+## About Dr. Kondabolu Lakshmi Prasad Public School, Guntur
+
+Dr. Kondabolu Lakshmi Prasad Public School, also known as Dr. KLP Public School, was established in 1983. It is managed by the Nagarjuna Education Society. The school is affiliated with the Central Board of Secondary Education (CBSE).
 
 <style>
 table {
@@ -22,7 +24,9 @@ table {
 | Parent Institution    | Nagarjuna Education Society |
 
 
-![School Image](school1.jpg)
+![School Image](s1.jpeg)
+![School Image](s2.jpeg)
+![School Image](s3.jpeg)
 
 
 ## Academics
